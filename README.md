@@ -38,5 +38,29 @@ Dedicated graphics card: preferable
 
  - Gazebo 11, a physical engine (used for simulation) is tightly integrated with ROS Noetic and so it comes pre-installed when      ```ros-noetic-desktop-full```      is installed.
 
+ D.Python(Tutorials for OOP'S)
+ 
+ These tutorials are provided in the format of Jupyter Notebooks OR .ipynb files embedded in a .zip file named, python_tutorials.zip
+
+ E.OpenCV, NumPy, Matplotlib
+
+ Tutorials by OpenCV:
+
+Introduction to OpenCV
+
+GUI features in OpenCV
+
+Core Operations - Basic and Arithmetic Operations on Images
+
+Image Processing in OpenCV - Changing Colorspaces, Image Thresholding, Contours in OpenCV
+
+Tutorials from CS231N course:
+
+Python language
+NumPy
+Matplotlib
+These tutorials are provided in the format of Jupyter Notebooks OR .ipynb files embedded in a .zip file named, opencv_tutorials.zip .
+
+ 
 
 
