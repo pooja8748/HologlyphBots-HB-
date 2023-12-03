@@ -1,62 +1,62 @@
-#!/bin/bash
+# e-Yantra Robotics Competition - Theme Book
 
-# Ubuntu 22.04.3 LTS Installation
-# Download link: <provide_download_link>
-# Follow the installation guide at <installation_guide_link>
+This repository contains the installation and setup instructions for the e-Yantra Robotics Competition Theme - HB (Hummingbird). The instructions include setting up Ubuntu 22.04.3 LTS, ROS 2 Humble distribution, Gazebo, and other dependencies.
 
-# ROS 2 Humble Installation
-# Follow the ROS 2 installation guide provided
-# Reference: https://docs.ros.org/en/humble/Installation/Linux-Install-Debians.html
+## Table of Contents
 
-# Upgrade system
-sudo apt update
-sudo apt upgrade -y
+1. [Ubuntu 22.04.3 LTS Installation](#ubuntu-22043-lts-installation)
+2. [ROS 2 Humble Installation](#ros-2-humble-installation)
+3. [Gazebo Installation](#gazebo-installation)
+4. [General Dependencies](#general-dependencies)
 
-# Set locale
-locale  # check for UTF-8
-sudo apt install locales
-sudo locale-gen en_US en_US.UTF-8
-sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
-export LANG=en_US.UTF-8
-locale  # verify settings
+## Ubuntu 22.04.3 LTS Installation
 
-# Setup Sources
-sudo apt install software-properties-common
-sudo add-apt-repository universe
+Follow the steps provided in the [Ubuntu 22.04.3 LTS Installation Guide](<insert_link_to_guide>).
 
-# Add ROS 2 GPG key
-sudo apt update && sudo apt install curl -y
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+## ROS 2 Humble Installation
 
-# Add ROS 2 repository to sources list
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+Follow the steps provided in the [ROS 2 Humble Installation Guide](<insert_link_to_ros2_guide>).
 
-# Install ROS 2 packages
-sudo apt update
-sudo apt install ros-humble-desktop -y
+## Gazebo Installation
 
-# Environment setup
-echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+To install Gazebo, run the following commands:
 
-# Gazebo Installation
-sudo apt install ros-humble-gazebo-ros -y
-sudo apt install ros-humble-gazebo-plugins -y
+```bash
+sudo apt install ros-humble-gazebo-ros
+sudo apt install ros-humble-gazebo-plugins
 
-# Additional setup or configuration steps if needed
+## General Dependencies
+To use all provided utilities, there are some packages you need to install first. Copy and paste the following commands into your terminal:
+sudo apt install -y \
+    ninja-build \
+    exiftool \
+    python3-empy \
+    python3-toml \
+    python3-numpy \
+    python3-yaml \
+    python3-dev \
+    python3-pip \
+    ninja-build \
+    protobuf-compiler \
+    libeigen3-dev \
+    genromfs \
+    libignition-rendering3 \
+    libgstreamer-plugins-base1.0-dev \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-ugly
 
-# Clone your ROS project repository
-# git clone <your_repository_url>
+pip3 install \
+    pandas \
+    jinja2 \
+    pyserial \
+    cerberus \
+    pyulog \
+    numpy \
+    toml \
+    pyquaternion \
+    kconfiglib \
+    --user packaging \
+    --user jsonschema
 
-# Navigate to the repository directory
-# cd <repository_directory>
-
-# Build your ROS packages (if needed)
-# colcon build
-
-# Source the setup file
-# source install/setup.bash
-
-# Run your ROS nodes or simulations
-
-# End of script
