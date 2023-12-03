@@ -39,11 +39,19 @@ Dedicated graphics card: preferable
 
  - Gazebo 11, a physical engine (used for simulation) is tightly integrated with ROS Noetic and so it comes pre-installed when      ```ros-noetic-desktop-full```      is installed.
 
- D.Python(Tutorials for OOP'S),OpenCV, NumPy, Matplotlib
+ D. Python(Tutorials for OOP'S),OpenCV, NumPy, Matplotlib
  
  These tutorials are provided in the format of Jupyter Notebooks OR .ipynb files embedded in a .zip file named, python_tutorials.zip
 
 
+## Tasks
+
+For each task package, README files are provided which give details about the problem statement and the task specifications. 
+
+- [Task 0 - Installing the required software,Solving Codechef Problems](task_0/README.md)
+- [Task 1 - Task 1A(ROS2),Task 1B(Gazebo-ROS, URDF,write a simple P controller)](task_1)
+- [Task 2 - Task 2A,Task 2B](task_2)
+- [Task 3 - Task 3A(Bot Design),Task 3B(Arena Setup),Task 3C(Hardware Testing)](task_3)
  
 
 
